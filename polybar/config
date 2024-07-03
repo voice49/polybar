@@ -118,14 +118,14 @@ font-3 = "UbuntuMonoo Nerd  Font Mono Regular:size=8;0"
 
 modules-left =  activity bspwm xwindow 
 modules-center= xkeyboard caps num weather1
-modules-right = popup-calendar pavolume cpu2 memory2 sysmenu 
+modules-right = popup-calendar pavolume cpu2 memory2   sysmenu |
 tray-detached = false
-tray-offset-x = 160
+tray-offset-x = 0
 tray-offset-y = 0
-tray-padding = 0
+tray-padding = 1
 tray-maxsize = 14
 tray-scale = 1.0
-tray-position =  center
+tray-position = right
 tray-background = ${colors.background}
 
 scroll-up = bspwm-desknext
@@ -183,7 +183,7 @@ font-2 = "UbuntuMonoo Nerd  Font Mono Regular:size=8;0"
 font-3 = "UbuntuMonoo Nerd  Font Mono Regular:size=8;0"
 
 modules-left = bspwm xwindow
-modules-center = spotify1  sysmenu  xkeyboard caps filesystem  
+modules-center = spotify1  powermenu xkeyboard caps filesystem  
 modules-right =  pavolume cpu2 memory2 
 ;tray-detached = false
 ;tray-offset-x = 0
@@ -344,7 +344,7 @@ type = custom/text
 content =  "⏻"
 content-foreground = ${color.fg}
 
-click-left = $HOME/.config/rofipower/rofipower.sh
+click-left = $HOME/.config/voice49/rofi/powermenu.sh
 ################################################################
 [module/filesystem]
 ;https://github.com/jaagr/polybar/wiki/Module:-filesystem
